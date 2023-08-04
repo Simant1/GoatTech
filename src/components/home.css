@@ -1,0 +1,651 @@
+body{
+  background: #EDEDED
+}
+.ripple-background{
+  background-color: black;
+  height: 790px;
+  position: relative;
+  top: -130px;
+  z-index: -1;
+  
+ 
+
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.right1{
+  width: 700px;
+  position: absolute;
+  padding-top: 5rem;
+  right: 7.5rem;
+  
+}
+.right1 h1{
+  font-size: xx-large;
+  font-weight: 700;
+  font-size: 80px;
+  color: rgb(254, 254, 254)!important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.right1 p{
+color: white;
+}
+
+
+.right1 .btn-1{
+  position: absolute;
+  left: 2px;
+  height: 50px;
+  border-radius: 20px;
+  }
+
+
+  .open-button {
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 150px;
+    height: 100px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #8C3333;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: #8C3333;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+  /* About */
+
+  .about{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+  .about .left-about{
+    border: 15px solid #7A9D54;
+    border-radius: 5px;
+
+  }
+  .about .left-about :hover{
+    border: 15px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+  }
+  .right-about{
+
+  }
+  .right-about h6{
+    background-color:  #7A9D54 ;
+    width: 100px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 30px;
+    color: #8C3333;
+    margin-bottom: 30px;
+  }
+
+  /* Features */
+  .features{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 6rem;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    background-color: rgb(249, 237, 222);
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+
+  .features h6{
+    background-color:  #7A9D54 ;
+    width: 100px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 30px;
+    color: #8C3333;
+    margin-bottom: -20px;
+  }
+  .features h2{
+    text-decoration: underline wavy white 5px;
+  }
+
+  .features .features-main{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-right: 5rem;
+    row-gap: 2rem;
+    column-gap: 5rem;
+    overflow-wrap: normal;
+    width: 100%;
+  }
+  .features .features-main :hover{
+    transform: scale(1.05);
+  }
+
+  .features-main .features-1{
+    background-color: #8C3333;
+    width: 550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+  .features-main .features-2{
+    background-color: #8C3333;
+    width:550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+  .features-main .features-3{
+    background-color: #8C3333;
+    width: 550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+  .features-main .features-4{
+    background-color: #8C3333;
+    width: 550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+  .features-main .features-5{
+    background-color: #8C3333;
+    width: 550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+  .features-main .features-6{
+    background-color: #8C3333;
+    width: 550px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgba(0,0,0,0.75);
+  }
+
+  svg{
+    color:#7A9D54;
+    
+  }
+/* services */
+  .services{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+
+  .services h6{
+    background-color:  #7A9D54 ;
+    width: 100px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 30px;
+    color: #8C3333;
+    margin-bottom: 20px;
+  }
+  .services h2{
+    text-decoration: underline wavy white 5px;
+    margin-bottom: 3rem;
+  }
+  .services h4{
+  color: white;
+  font-size: xx-large;
+  }
+
+  .services .services-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-right: 3rem;
+    row-gap: 2rem;
+    column-gap: 5rem;
+    overflow-wrap: normal;
+    width: 100%;
+  }
+
+  .services-main .services-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+  
+  .services-main .services-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+  
+  .services-main .services-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+  
+  .services-main .services-4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+  
+  .services-main .services-5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+  
+  .services-main .services-6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #8C3333;
+    width: 300px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: -2px 6px 25px -8px rgb(249, 237, 222);
+  }
+
+
+  /* customers */
+
+  .customers{
+    display: flex;
+    justify-content: center;
+  }
+  .customers h1{
+    padding: 5rem;
+    position: absolute;
+    color: #8C3333;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .customers .count{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    color: #8C3333;
+    padding-top: 15rem;
+    gap: 15rem;
+
+  }
+  .count h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .count .c {
+    font-size: 50px;
+  }
+
+
+  /* skills */
+
+   /* About */
+
+   .skills{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 3rem;
+    margin-top:5rem ;
+    margin-bottom: 5rem;
+  }
+  .skills .left-skills{
+    border: 15px solid #7A9D54;
+    border-radius: 5px;
+
+  }
+  .skills .left-skills :hover{
+    border: 15px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+  }
+  .right-skills{
+
+  }
+  .right-skills h6{
+    background-color:  #7A9D54 ;
+    width: 100px;
+    height: 50px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: #8C3333;
+    margin-bottom: 30px;
+  }
+
+  /* work */
+
+  .work{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    overflow: hidden;
+    padding-bottom: 6rem;
+  }
+
+  .work h6{
+    background-color:  #7A9D54;
+    width: 100px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 30px;
+    color: #8C3333 ;
+    margin-bottom: 20px;
+  }
+  .work h2{
+    text-decoration: underline wavy white 5px;
+    margin-bottom: 3rem;
+  }
+
+.portfolio{
+  margin-top: -60px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+  
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #151515;
+  background: #7A9D54;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(21, 21, 21, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(21, 21, 21, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #ffc451;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}

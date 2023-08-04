@@ -1,0 +1,33 @@
+.bg-body-tertiary{
+    background-color: transparent !important;
+    padding-top: 20px;
+    
+}
+.me-auto{
+     padding-left: 25rem;
+     color: white !important;
+     gap: 50px;
+     font-size: large;
+     font-weight: 600;
+}
+
+.btn-1{
+    width: 200px;
+    position: relative;
+    right: 20px;
+
+}
+.me-auto a{
+    color: white;
+}
+ a:hover{
+    border-bottom: solid 5px rgb(234, 54, 4);
+    color:whitesmoke !important;
+}
+
+.btn-1{
+    background-color: rgb(255, 89, 0);
+    border: none;
+ 
+  
+}
